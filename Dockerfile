@@ -30,6 +30,5 @@ RUN pip3 install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/
 RUN pip3 install git+https://github.com/cocodataset/panopticapi.git
 RUN pip3 install git+https://github.com/mcordts/cityscapesScripts.git
 COPY . .
-RUN cd OneFormer && \
-    pip3 install -r ../requirements.txt && \
+RUN pip3 install -r requirements.txt && \
     pip3 install wandb
